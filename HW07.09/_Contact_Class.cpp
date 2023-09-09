@@ -13,32 +13,6 @@ Contact::Contact() {
     init = false;
 }
 
-Contact::Contact(const char* s, const char* n, const char* p, const char* hN, const char* wN, const char* mN, const char* aI) {
-    
-    surname = new char[strlen(s) + 1];
-    strcpy(surname, s);
-
-    name = new char[strlen(n) + 1];
-    strcpy(name, n);
-
-    patronym = new char[strlen(p) + 1];
-    strcpy(patronym, p);
-
-    homeNum = new char[strlen(hN) + 1];
-    strcpy(homeNum, hN);
-
-    workNum = new char[strlen(wN) + 1];
-    strcpy(workNum, wN);
-
-    mobileNum = new char[strlen(mN) + 1];
-    strcpy(mobileNum, mN);
-
-    addInfo = new char[strlen(aI) + 1];
-    strcpy(addInfo, aI);
-
-    init = true;
-}
-
 void Contact::printContact() { 
 
     std::cout << "Name: " << name << std::endl;

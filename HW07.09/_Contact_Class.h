@@ -16,10 +16,9 @@ private:
 public:
 
     Contact();
-    Contact(const char* s, const char* n, const char* p, const char* hN, const char* wN, const char* mN, const char* aI);
     
     void printContact();
-    void initContact();
+    void initContact(const char* s, const char* n, const char* p, const char* hN, const char* wN, const char* mN, const char* aI);
 
     void setSurname(const char* s);
     void setName(const char* n);
